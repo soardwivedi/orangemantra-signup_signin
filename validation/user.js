@@ -20,7 +20,7 @@ const LoginSchema = celebrate({
 const SignUpSchema = celebrate({
   [Segments.BODY]: Joi.object()
     .keys({
-      first_name: Joi.string().min(36).max(36).required(),
+      first_name: Joi.string().min(3).max(36).required(),
       last_name: Joi.string(),
       email: Joi.string().email().required(),
       username: Joi.string().required(),

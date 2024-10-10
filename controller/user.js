@@ -11,6 +11,12 @@ exports.register = async (req, res) => {
 
     if (isUser) {
       let message = 'User already registered with the given username';
+      if (isUser.username === username && isUser.email === email) {
+        message = 'User already registered with the given username and email';
+        return res.json({
+          message
+        });
+      }
       if (isUser.email === email)
         message = 'User already registered with the given email';
 

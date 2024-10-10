@@ -30,8 +30,7 @@ If you have nvm installed in your environment then simply run "nvm use" or else 
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/user-auth-nodejs
-   cd user-auth-nodejs
+   git clone git@github.com:soardwivedi/orangemantra-signup_signin.git
 
 #.env.example
 .env.example file has the sensitive information example, change those as per your machine.
