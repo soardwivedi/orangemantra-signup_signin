@@ -66,13 +66,11 @@ exports.login = async (req, res) => {
 // Get user profile
 exports.profile = async (req, res) => {
   try {
-    const user = await User.findById(req.user.userId);
+    const user = await User.findById(req.user.userId).lean();
     if (!user) return res.status(404).json({ message: 'User not found' });
-
+    delete user.password;
     return res.json(user);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 };
-
-// abhinesh@orangemantra.in

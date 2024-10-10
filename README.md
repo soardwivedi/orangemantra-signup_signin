@@ -48,3 +48,7 @@ To run the project on production environment run command "npm start"
 /auth/register
 /auth/login
 /user/profile
+
+###
+
+To get the user profile data you have to send the token in headers under the "authorization" key.

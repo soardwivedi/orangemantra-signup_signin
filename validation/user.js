@@ -3,8 +3,9 @@ const { celebrate, Joi, Segments } = require('celebrate');
 const ProfileSchema = celebrate({
   [Segments.HEADERS]: Joi.object()
     .keys({
-      Authorization: Joi.string().required()
+      authorization: Joi.string().required()
     })
+    .unknown(true)
     .options({ abortEarly: false })
 });
 
