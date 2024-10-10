@@ -42,3 +42,9 @@ To run the project on development environment run command "npm run dev"
 ###
 
 To run the project on production environment run command "npm start"
+
+### api end points for this project are following.
+
+/auth/register
+/auth/login
+/user/profile
